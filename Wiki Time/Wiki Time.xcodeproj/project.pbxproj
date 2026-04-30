@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		AFCCDE512FA1F5CB00DDB3D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFCCDE3A2FA1F5C900DDB3D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFCCDE412FA1F5C900DDB3D9;
+			remoteInfo = "Wiki Time";
+		};
+		AFCCDE5B2FA1F5CB00DDB3D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFCCDE3A2FA1F5C900DDB3D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFCCDE412FA1F5C900DDB3D9;
+			remoteInfo = "Wiki Time";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AFCCDE422FA1F5C900DDB3D9 /* Wiki Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wiki Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCCDE502FA1F5CB00DDB3D9 /* Wiki TimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wiki TimeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCCDE5A2FA1F5CB00DDB3D9 /* Wiki TimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wiki TimeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AFCCDE442FA1F5C900DDB3D9 /* Wiki Time */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Wiki Time";
+			sourceTree = "<group>";
+		};
+		AFCCDE532FA1F5CB00DDB3D9 /* Wiki TimeTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Wiki TimeTests";
+			sourceTree = "<group>";
+		};
+		AFCCDE5D2FA1F5CB00DDB3D9 /* Wiki TimeUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Wiki TimeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFCCDE3F2FA1F5C900DDB3D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCCDE4D2FA1F5CB00DDB3D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCCDE572FA1F5CB00DDB3D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFCCDE392FA1F5C900DDB3D9 = {
+			isa = PBXGroup;
+			children = (
+				AFCCDE442FA1F5C900DDB3D9 /* Wiki Time */,
+				AFCCDE532FA1F5CB00DDB3D9 /* Wiki TimeTests */,
+				AFCCDE5D2FA1F5CB00DDB3D9 /* Wiki TimeUITests */,
+				AFCCDE432FA1F5C900DDB3D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFCCDE432FA1F5C900DDB3D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFCCDE422FA1F5C900DDB3D9 /* Wiki Time.app */,
+				AFCCDE502FA1F5CB00DDB3D9 /* Wiki TimeTests.xctest */,
+				AFCCDE5A2FA1F5CB00DDB3D9 /* Wiki TimeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFCCDE412FA1F5C900DDB3D9 /* Wiki Time */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCCDE642FA1F5CB00DDB3D9 /* Build configuration list for PBXNativeTarget "Wiki Time" */;
+			buildPhases = (
+				AFCCDE3E2FA1F5C900DDB3D9 /* Sources */,
+				AFCCDE3F2FA1F5C900DDB3D9 /* Frameworks */,
+				AFCCDE402FA1F5C900DDB3D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AFCCDE442FA1F5C900DDB3D9 /* Wiki Time */,
+			);
+			name = "Wiki Time";
+			packageProductDependencies = (
+			);
+			productName = "Wiki Time";
+			productReference = AFCCDE422FA1F5C900DDB3D9 /* Wiki Time.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFCCDE4F2FA1F5CB00DDB3D9 /* Wiki TimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCCDE672FA1F5CB00DDB3D9 /* Build configuration list for PBXNativeTarget "Wiki TimeTests" */;
+			buildPhases = (
+				AFCCDE4C2FA1F5CB00DDB3D9 /* Sources */,
+				AFCCDE4D2FA1F5CB00DDB3D9 /* Frameworks */,
+				AFCCDE4E2FA1F5CB00DDB3D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFCCDE522FA1F5CB00DDB3D9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AFCCDE532FA1F5CB00DDB3D9 /* Wiki TimeTests */,
+			);
+			name = "Wiki TimeTests";
+			packageProductDependencies = (
+			);
+			productName = "Wiki TimeTests";
+			productReference = AFCCDE502FA1F5CB00DDB3D9 /* Wiki TimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFCCDE592FA1F5CB00DDB3D9 /* Wiki TimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCCDE6A2FA1F5CB00DDB3D9 /* Build configuration list for PBXNativeTarget "Wiki TimeUITests" */;
+			buildPhases = (
+				AFCCDE562FA1F5CB00DDB3D9 /* Sources */,
+				AFCCDE572FA1F5CB00DDB3D9 /* Frameworks */,
+				AFCCDE582FA1F5CB00DDB3D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFCCDE5C2FA1F5CB00DDB3D9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AFCCDE5D2FA1F5CB00DDB3D9 /* Wiki TimeUITests */,
+			);
+			name = "Wiki TimeUITests";
+			packageProductDependencies = (
+			);
+			productName = "Wiki TimeUITests";
+			productReference = AFCCDE5A2FA1F5CB00DDB3D9 /* Wiki TimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFCCDE3A2FA1F5C900DDB3D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					AFCCDE412FA1F5C900DDB3D9 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					AFCCDE4F2FA1F5CB00DDB3D9 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = AFCCDE412FA1F5C900DDB3D9;
+					};
+					AFCCDE592FA1F5CB00DDB3D9 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = AFCCDE412FA1F5C900DDB3D9;
+					};
+				};
+			};
+			buildConfigurationList = AFCCDE3D2FA1F5C900DDB3D9 /* Build configuration list for PBXProject "Wiki Time" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFCCDE392FA1F5C900DDB3D9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AFCCDE432FA1F5C900DDB3D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFCCDE412FA1F5C900DDB3D9 /* Wiki Time */,
+				AFCCDE4F2FA1F5CB00DDB3D9 /* Wiki TimeTests */,
+				AFCCDE592FA1F5CB00DDB3D9 /* Wiki TimeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFCCDE402FA1F5C900DDB3D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCCDE4E2FA1F5CB00DDB3D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCCDE582FA1F5CB00DDB3D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFCCDE3E2FA1F5C900DDB3D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCCDE4C2FA1F5CB00DDB3D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCCDE562FA1F5CB00DDB3D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFCCDE522FA1F5CB00DDB3D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFCCDE412FA1F5C900DDB3D9 /* Wiki Time */;
+			targetProxy = AFCCDE512FA1F5CB00DDB3D9 /* PBXContainerItemProxy */;
+		};
+		AFCCDE5C2FA1F5CB00DDB3D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFCCDE412FA1F5C900DDB3D9 /* Wiki Time */;
+			targetProxy = AFCCDE5B2FA1F5CB00DDB3D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AFCCDE622FA1F5CB00DDB3D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFCCDE632FA1F5CB00DDB3D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AFCCDE652FA1F5CB00DDB3D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Wiki Time/Wiki_Time.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zenkarsha.Wiki-Time";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AFCCDE662FA1F5CB00DDB3D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Wiki Time/Wiki_Time.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zenkarsha.Wiki-Time";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AFCCDE682FA1F5CB00DDB3D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zenkarsha.Wiki-TimeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wiki Time.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Wiki Time";
+			};
+			name = Debug;
+		};
+		AFCCDE692FA1F5CB00DDB3D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zenkarsha.Wiki-TimeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wiki Time.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Wiki Time";
+			};
+			name = Release;
+		};
+		AFCCDE6B2FA1F5CB00DDB3D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zenkarsha.Wiki-TimeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Wiki Time";
+			};
+			name = Debug;
+		};
+		AFCCDE6C2FA1F5CB00DDB3D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "zenkarsha.Wiki-TimeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Wiki Time";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFCCDE3D2FA1F5C900DDB3D9 /* Build configuration list for PBXProject "Wiki Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCCDE622FA1F5CB00DDB3D9 /* Debug */,
+				AFCCDE632FA1F5CB00DDB3D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFCCDE642FA1F5CB00DDB3D9 /* Build configuration list for PBXNativeTarget "Wiki Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCCDE652FA1F5CB00DDB3D9 /* Debug */,
+				AFCCDE662FA1F5CB00DDB3D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFCCDE672FA1F5CB00DDB3D9 /* Build configuration list for PBXNativeTarget "Wiki TimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCCDE682FA1F5CB00DDB3D9 /* Debug */,
+				AFCCDE692FA1F5CB00DDB3D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFCCDE6A2FA1F5CB00DDB3D9 /* Build configuration list for PBXNativeTarget "Wiki TimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCCDE6B2FA1F5CB00DDB3D9 /* Debug */,
+				AFCCDE6C2FA1F5CB00DDB3D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFCCDE3A2FA1F5C900DDB3D9 /* Project object */;
+}
