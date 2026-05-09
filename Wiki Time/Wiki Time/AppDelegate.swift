@@ -5,20 +5,16 @@ import UserNotifications
 @MainActor
 final class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate, UNUserNotificationCenterDelegate {
     private enum StatusIconMetrics {
-        static let itemWidth: CGFloat = 18
-        static let symbolSize: CGFloat = 22
-        static let symbolX: CGFloat = -2
-        static let symbolY: CGFloat = 0
-        static let badgeSize: CGFloat = 7
-        static let badgeX: CGFloat = 15
-        static let badgeY: CGFloat = 13
+        static let itemWidth: CGFloat = 24
+        static let symbolPointSize: CGFloat = 18
+        static let badgeDiameter: CGFloat = 7
+        static let badgeInset: CGFloat = 1
     }
 
     private let articleStore = ArticleStore()
     private let statusItem = NSStatusBar.system.statusItem(withLength: StatusIconMetrics.itemWidth)
     private let popover = NSPopover()
-    private let statusIconView = NSImageView()
-    private let unreadBadgeView = NSView()
+    private let unreadBadgeLayer = CALayer()
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         NSApp.setActivationPolicy(.accessory)
@@ -36,11 +32,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate, UNU
         statusItem.button?.action = #selector(togglePopover)
         statusItem.button?.sendAction(on: [.leftMouseUp, .rightMouseUp])
         statusItem.button?.imagePosition = .imageOnly
-        configureStatusIcon()
-        renderStatusIcon(hasUnreadArticle: false)
+        statusItem.button?.image = makeStatusIconImage()
+        configureUnreadBadge()
+        updateUnreadBadge(hasUnreadArticle: articleStore.hasUnreadArticle)
 
         articleStore.onUnreadStateChanged = { [weak self] hasUnreadArticle in
-            self?.renderStatusIcon(hasUnreadArticle: hasUnreadArticle)
+            self?.updateUnreadBadge(hasUnreadArticle: hasUnreadArticle)
         }
 
         articleStore.onOpenArticle = { [weak self] in
@@ -71,6 +68,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate, UNU
         }
 
         articleStore.markOpened()
+        updateUnreadBadge(hasUnreadArticle: false)
         popover.show(relativeTo: button.bounds, of: button, preferredEdge: .minY)
         popover.contentViewController?.view.window?.makeKey()
     }
@@ -142,26 +140,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate, UNU
         articleStore.quitApp()
     }
 
-    private func renderStatusIcon(hasUnreadArticle: Bool) {
-        statusIconView.frame = CGRect(
-            x: StatusIconMetrics.symbolX,
-            y: StatusIconMetrics.symbolY,
-            width: StatusIconMetrics.symbolSize,
-            height: StatusIconMetrics.symbolSize
-        )
-
-        unreadBadgeView.isHidden = !hasUnreadArticle
-        unreadBadgeView.frame = CGRect(
-            x: StatusIconMetrics.badgeX,
-            y: StatusIconMetrics.badgeY,
-            width: StatusIconMetrics.badgeSize,
-            height: StatusIconMetrics.badgeSize
-        )
-    }
-
     private func makeStatusIconImage() -> NSImage? {
         let configuration = NSImage.SymbolConfiguration(
-            pointSize: StatusIconMetrics.symbolSize,
+            pointSize: StatusIconMetrics.symbolPointSize,
             weight: .regular
         )
         let image = NSImage(
@@ -172,28 +153,34 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate, UNU
         return image
     }
 
-    private func configureStatusIcon() {
+    private func configureUnreadBadge() {
         guard let button = statusItem.button else { return }
 
         button.wantsLayer = true
         button.layer?.masksToBounds = false
 
-        statusIconView.image = makeStatusIconImage()
-        statusIconView.contentTintColor = .labelColor
-        statusIconView.imageScaling = .scaleProportionallyUpOrDown
-        statusIconView.frame = CGRect(
-            x: StatusIconMetrics.symbolX,
-            y: StatusIconMetrics.symbolY,
-            width: StatusIconMetrics.symbolSize,
-            height: StatusIconMetrics.symbolSize
-        )
-        button.addSubview(statusIconView)
+        unreadBadgeLayer.backgroundColor = NSColor.systemRed.cgColor
+        unreadBadgeLayer.cornerRadius = StatusIconMetrics.badgeDiameter / 2
+        unreadBadgeLayer.isHidden = true
+        button.layer?.addSublayer(unreadBadgeLayer)
+    }
 
-        unreadBadgeView.wantsLayer = true
-        unreadBadgeView.layer?.backgroundColor = NSColor.systemRed.cgColor
-        unreadBadgeView.layer?.cornerRadius = StatusIconMetrics.badgeSize / 2
-        unreadBadgeView.isHidden = true
-        button.addSubview(unreadBadgeView, positioned: .above, relativeTo: statusIconView)
+    private func updateUnreadBadge(hasUnreadArticle: Bool) {
+        guard let button = statusItem.button else { return }
+
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
+        unreadBadgeLayer.frame = CGRect(
+            x: button.bounds.maxX - StatusIconMetrics.badgeDiameter - StatusIconMetrics.badgeInset,
+            y: button.bounds.minY + StatusIconMetrics.badgeInset,
+            width: StatusIconMetrics.badgeDiameter,
+            height: StatusIconMetrics.badgeDiameter
+        )
+        unreadBadgeLayer.isHidden = !hasUnreadArticle
+        CATransaction.commit()
+
+        button.needsDisplay = true
+        button.layer?.setNeedsDisplay()
     }
 
     func userNotificationCenter(
