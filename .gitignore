@@ -1,1 +1,3 @@
 /.deriveddata
+/dist
+scripts/create_dmg.sh
