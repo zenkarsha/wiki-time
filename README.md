@@ -22,6 +22,14 @@ macOS menu bar 維基百科隨機條目推送工具，定時把繁體中文 Wiki
 
 專案目前沒有額外第三方套件依賴，clone 下來就能開。
 
+## 下載
+
+從以下位置下載最新版本：
+
+[https://github.com/zenkarsha/wiki-time/releases](https://github.com/zenkarsha/wiki-time/releases)
+
+安裝 App 後，macOS 可能會在第一次啟動時阻擋它。如果發生這種情況，請前往 `系統設定 > 隱私權與安全性`，然後點擊 `強制打開`。
+
 ## 執行方式
 
 用 Xcode：
